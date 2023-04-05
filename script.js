@@ -1,11 +1,9 @@
-let price = 100; // 塩コショウの価格
+// 塩とこしょうの健康効果についての情報を表示するボタンをクリックしたときの処理
+document.getElementById("health-button").addEventListener("click", function() {
+    document.getElementById("health-info").style.display = "block";
+});
 
-function increasePrice() {
-  price += 10;
-  document.getElementById("price").innerHTML = price + "円";
-}
-
-function decreasePrice() {
-  price -= 10;
-  document.getElementById("price").innerHTML = price + "円";
-}
+// 塩こしょうのレシピを表示するボタンをクリックしたときの処理
+document.getElementById("recipe-button").addEventListener("click", function() {
+    document.getElementById("recipe-info").style.display = "block";
+});
